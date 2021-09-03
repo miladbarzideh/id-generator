@@ -3,6 +3,8 @@
 id-generator is a simple Snowflake based unique ID generator. 
 Inspired by: [uid-generator](https://github.com/baidu/uid-generator)
 
+##How It Works
+
 A unique ID consists of node ID, timestamp, and sequence within that timestamp. Usually, it is a 64 bits number(long), and the default bits of that three fields are as follows:
 
 - sign(1bit) - The highest bit is always 0.
@@ -27,7 +29,7 @@ A unique ID consists of node ID, timestamp, and sequence within that timestamp. 
 - Run the ID generator as a separate service (In this case, we can ignore node ID).
 
 
-#### Example:
+##Usage
 
         long id = uidGenerator.nextId();
         ParsedId parsedId = uidGenerator.parseId(id);
