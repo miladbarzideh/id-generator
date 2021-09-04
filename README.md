@@ -23,7 +23,7 @@ A unique ID consists of node ID, timestamp, and sequence within that timestamp. 
 
 - Generating large numbers with 18 digits
 
-**Some Ways to generate shorter IDs:**
+**To generate shorter IDs:**
 
 - Using the last 16 bits of the IP address as the worker ID (if we can set the CIDR of k8s env is /16). 
 - Run the ID generator as a separate service (In this case, we can ignore node ID).
